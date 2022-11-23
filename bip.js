@@ -28,7 +28,7 @@ function onChange(e) {
 function onInput(e) { update(); }
 
 async function init() {
-	let r = await fetch("//unpkg.com/country-flag-emoji-json@latest/json/flag-emojis.pretty.json");
+	let r = await fetch("https://unpkg.com/browse/country-flag-emoji-json@latest/dist/index.json");
 	let data = await r.json();
 
 	sources.forEach(source => {
